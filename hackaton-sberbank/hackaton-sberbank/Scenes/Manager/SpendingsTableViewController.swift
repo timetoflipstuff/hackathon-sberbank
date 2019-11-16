@@ -8,7 +8,7 @@
 
 import UIKit
 
-class SpendingsViewController: UITableViewController {
+class SpendingsTableViewController: UITableViewController {
     
     private let cellId = "cellId"
     
@@ -23,6 +23,10 @@ class SpendingsViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId, for: indexPath) as! SpendingsTableViewCell
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 80
     }
     
 }
