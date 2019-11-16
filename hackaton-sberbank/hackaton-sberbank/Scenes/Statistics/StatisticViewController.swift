@@ -67,7 +67,7 @@ class StatisticViewController: UIViewController {
         view.addSubview(tranportinglabel)
         view.addSubview(relaxlabel)
         
-<<<<<<< HEAD
+
 //        foodlabel.text = arraySum[0]
 //        foodlabel.textColor = .black
 //        foodlabel.frame = CGRect(x: 10, y: 250, width: 100, height: 40)
@@ -83,24 +83,6 @@ class StatisticViewController: UIViewController {
 //        otherlabel.text = arraySum[3]
 //        otherlabel.textColor = .black
 //        otherlabel.frame = CGRect(x: 280, y: 700, width: 100, height: 40)
-=======
-        foodlabel.text = arraySum[0]
-        foodlabel.textColor = .black
-        foodlabel.frame = CGRect(x: 10, y: 250, width: 100, height: 40)
-
-        relaxlabel.text = arraySum[1]
-        relaxlabel.textColor = .black
-        relaxlabel.frame = CGRect(x: 100, y: 400, width: 100, height: 40)
-
-        tranportinglabel.text = arraySum[2]
-        tranportinglabel.textColor = .black
-        tranportinglabel.frame = CGRect(x: 190, y: 550, width: 100, height: 40)
-
-        otherlabel.text = arraySum[3]
-        otherlabel.textColor = .black
-        otherlabel.frame = CGRect(x: 280, y: 700, width: 100, height: 40)
->>>>>>> d09d90caf3ea5a9f864cdd4b607b6ac5bbb3db9c
-
 
         
 

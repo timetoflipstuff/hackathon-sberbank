@@ -17,7 +17,6 @@
 		40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */; };
 		40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E4237FFCB8003EF9D9 /* AccountVC.swift */; };
 		40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */; };
-		40A444E9237FFCD9003EF9D9 /* StatisticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E8237FFCD9003EF9D9 /* StatisticsVC.swift */; };
 		E663D4D3238003FB0073ADC2 /* AccountViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D2238003FB0073ADC2 /* AccountViewCell.swift */; };
 		E663D4D523802ECB0073ADC2 /* SpendingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */; };
 		E663D4D723802FF70073ADC2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D623802FF60073ADC2 /* CircleView.swift */; };
@@ -39,7 +38,6 @@
 		40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
 		40A444E4237FFCB8003EF9D9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsVC.swift; sourceTree = "<group>"; };
-		40A444E8237FFCD9003EF9D9 /* StatisticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsVC.swift; sourceTree = "<group>"; };
 		E663D4D2238003FB0073ADC2 /* AccountViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCell.swift; sourceTree = "<group>"; };
 		E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsTableViewController.swift; sourceTree = "<group>"; };
 		E663D4D623802FF60073ADC2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
@@ -130,7 +128,6 @@
 			children = (
 				E663D4DA238030050073ADC2 /* StatisticViewController.swift */,
 				E663D4D623802FF60073ADC2 /* CircleView.swift */,
-				40A444E8237FFCD9003EF9D9 /* StatisticsVC.swift */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -243,7 +240,6 @@
 				40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */,
 				E663D4D923802FFF0073ADC2 /* SpensingNumbers.swift in Sources */,
 				11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */,
-				40A444E9237FFCD9003EF9D9 /* StatisticsVC.swift in Sources */,
 				11FF7AC92380014300882EF0 /* GeneralPeopleCollectionView.swift in Sources */,
 				E663D4D523802ECB0073ADC2 /* SpendingsTableViewController.swift in Sources */,
 				11FF7ACD238007D300882EF0 /* PeopleCollectionViewCell.swift in Sources */,
