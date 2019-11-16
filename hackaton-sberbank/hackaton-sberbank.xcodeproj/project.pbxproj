@@ -179,11 +179,11 @@
 		843AF2B623807E370050FAB4 /* LimitsAndGoals */ = {
 			isa = PBXGroup;
 			children = (
+				843AF2BB23807E370050FAB4 /* LimitsAndGoalsVC.swift */,
 				843AF2B723807E370050FAB4 /* LimitsHeader.swift */,
 				843AF2B823807E370050FAB4 /* GoalsCell.swift */,
 				843AF2B923807E370050FAB4 /* GoalsBlockCell.swift */,
 				843AF2BA23807E370050FAB4 /* LimitsCell.swift */,
-				843AF2BB23807E370050FAB4 /* LimitsAndGoalsVC.swift */,
 				843AF2BC23807E370050FAB4 /* LimitsBlockCell.swift */,
 				843AF2BD23807E370050FAB4 /* GoalsHeader.swift */,
 			);
