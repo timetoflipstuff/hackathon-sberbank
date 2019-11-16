@@ -6,51 +6,63 @@ final class GoalsCell: UITableViewCell {
     static let id = "GoalsCell"
     
     
-    public let nameLabel = UILabel()
-    public let balanceLabel = UILabel()
+    private let nameLabel = UILabel()
+    private let planAmmountLabel = UILabel()
     
-    public var imgView = UIImageView()
-    
-    var stackView: UIStackView!
-    
-    var subStackView: UIStackView!
+    private var imgView = UIImageView()
+    private var vertStackView: UIStackView!
+    private var subStackView: UIStackView!
+    private var payButton: UIButton!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         imgView.backgroundColor = .green
-        imgView.layer.cornerRadius = 36
+        imgView.layer.cornerRadius = 32.4
         imgView.layer.masksToBounds = true
+        imgView.contentMode = .scaleAspectFit
         
-        stackView = UIStackView(arrangedSubviews: [nameLabel, balanceLabel])
-        stackView.axis = .vertical
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 24)
         
-        balanceLabel.textColor = .init(red: 0.0, green: 1.0, blue: 0.5, alpha: 1)
+        vertStackView = UIStackView(arrangedSubviews: [nameLabel, planAmmountLabel])
+        vertStackView.axis = .vertical
+        vertStackView.distribution = .equalSpacing
+        
+        payButton = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        payButton.addTarget(self, action: #selector(payTapped), for: .touchUpInside)
         
         imgView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.translatesAutoresizingMaskIntoConstraints = false
+        vertStackView.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
-        balanceLabel.translatesAutoresizingMaskIntoConstraints = false
-        stackView.spacing = 8
-        stackView.distribution = .fillEqually
+        planAmmountLabel.translatesAutoresizingMaskIntoConstraints = false
+        payButton.translatesAutoresizingMaskIntoConstraints = false
+        
         
         addSubview(imgView)
-        addSubview(stackView)
+        addSubview(vertStackView)
         
         imgView.topAnchor.constraint(equalTo: topAnchor, constant: 14).isActive = true
         imgView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -14).isActive = true
         imgView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 14).isActive = true
         imgView.widthAnchor.constraint(equalTo: imgView.heightAnchor, multiplier: 1).isActive = true
+
+        vertStackView.topAnchor.constraint(equalTo: topAnchor, constant: 18).isActive = true
+        vertStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -18).isActive = true
+        vertStackView.leadingAnchor.constraint(equalTo: imgView.trailingAnchor, constant: 8).isActive = true
+        vertStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
+    }
+    
+    public func setupUI(with item: Goal){
+        imgView.image = UIImage(named: item.image)
+        nameLabel.text = item.name
+        planAmmountLabel.text = String(item.planedAmmount) + " ₽"
         
-        
-        
-        stackView.topAnchor.constraint(equalTo: topAnchor, constant: 24).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24).isActive = true
-        stackView.leadingAnchor.constraint(equalTo: imgView.trailingAnchor, constant: 8).isActive = true
-        stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8).isActive = true
-        
-        nameLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        balanceLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+
+        nameLabel.textColor = item.isPaid ? .green : .red
+        planAmmountLabel.textColor = item.isPaid ? .green : .red
+    }
+    
+    @objc func payTapped(){
         
     }
     
@@ -64,9 +76,5 @@ final class GoalsCell: UITableViewCell {
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-//        self.isSelected = false
     }
-    
-    
-    
 }

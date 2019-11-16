@@ -3,20 +3,19 @@ import UIKit
 
 struct Goal {
     var name: String
-    var finance: Float
+    var planedAmmount: Int
     var image: String
-    //    var limit: Float?
-    //    var income: Float?
+    var isPaid: Bool
 }
 
 final class GoalsBlockCell: UITableViewCell {
     
     static let id = "GoalsBlockCell"
     private let tableView = UITableView()
-    public var goal = [Goal(name: "Mortgage", finance: 12000.49, image: "goalHome"),
-                Goal(name: "Lets beach bumming", finance: 3.22, image: "goalHoliday"),
-                Goal(name: "Want a car", finance: 100093.0, image: "goalCar"),
-                Goal(name: "New Mac-book", finance: 5.0, image: "goalMac")]
+    public var goal = [Goal(name: "Own appartment", planedAmmount: 10000, image: "goalHome", isPaid: false),
+                       Goal(name: "Lets beach bumming", planedAmmount: 10000, image: "goalHoliday", isPaid: true),
+                       Goal(name: "Want a car", planedAmmount: 5000, image: "goalCar", isPaid: false),
+                       Goal(name: "New Mac-book", planedAmmount: 5000, image: "goalMac", isPaid: true)]
     
     private let mainLabel: UILabel = {
         let label = UILabel()
@@ -64,18 +63,11 @@ final class GoalsBlockCell: UITableViewCell {
         
         func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
             let cell = tableView.dequeueReusableCell(withIdentifier: GoalsCell.id, for: indexPath) as! GoalsCell
-            
-            
-            let accMember = goal[indexPath.row]
-            
-            cell.nameLabel.text = accMember.name
-            cell.balanceLabel.text = String(accMember.finance) + " руб"
-            cell.imgView.image = UIImage(named: accMember.image)
-            
+            cell.setupUI(with: goal[indexPath.row])            
             return cell
         }
         
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 100
+            return 90
         }
 }

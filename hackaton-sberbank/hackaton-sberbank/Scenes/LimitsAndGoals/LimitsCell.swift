@@ -31,7 +31,7 @@ final class LimitsCell: UITableViewCell{
         
         vertStackView = UIStackView(arrangedSubviews: [nameLabel, horisontalStackView])
         vertStackView.axis = .vertical
-        vertStackView.distribution = .equalCentering
+        vertStackView.distribution = .equalSpacing
         
         imgView.translatesAutoresizingMaskIntoConstraints = false
         vertStackView.translatesAutoresizingMaskIntoConstraints = false
@@ -46,14 +46,10 @@ final class LimitsCell: UITableViewCell{
         imgView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 14).isActive = true
         imgView.widthAnchor.constraint(equalTo: imgView.heightAnchor, multiplier: 1).isActive = true
         
-        vertStackView.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
-        vertStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20).isActive = true
+        vertStackView.topAnchor.constraint(equalTo: topAnchor, constant: 18).isActive = true
+        vertStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -18).isActive = true
         vertStackView.leadingAnchor.constraint(equalTo: imgView.trailingAnchor, constant: 8).isActive = true
         vertStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
-        
-        nameLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        canSpendLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        
     }
     
     public func setupUI(with item: LimitPosition){
