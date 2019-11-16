@@ -5,29 +5,68 @@ final class LimitsCell: UITableViewCell{
     
     static let id = "LimitsCell"
     
-    private let mainLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Default LimitsCell Text"
-        label.textAlignment = .center
-        label.font = .systemFont(ofSize: 24)
-        return label
-    }()
+    private let nameLabel = UILabel()
+    private let canSpendLabel = UILabel()
+    private let alreadySpendLabel = UILabel()
+    private var imgView = UIImageView()
     
-    public func setupUI(mainText: String?){
-        mainLabel.text = mainText
-    }
-
+    private var vertStackView: UIStackView!
+    private var horisontalStackView: UIStackView!
+    
+    var subStackView: UIStackView!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.backgroundColor = .clear
-        mainLabel.frame = self.contentView.frame
-        mainLabel.center = self.contentView.center
         
-        contentView.addSubview(mainLabel)
+        imgView.backgroundColor = .red
+        imgView.layer.cornerRadius = 32.4
+        imgView.layer.masksToBounds = true
+        imgView.contentMode = .scaleAspectFit
+        
+        nameLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        
+        horisontalStackView = UIStackView(arrangedSubviews: [canSpendLabel, alreadySpendLabel])
+        horisontalStackView.axis = .horizontal
+        horisontalStackView.distribution = .fillEqually
+        
+        vertStackView = UIStackView(arrangedSubviews: [nameLabel, horisontalStackView])
+        vertStackView.axis = .vertical
+        vertStackView.distribution = .equalCentering
+        
+        imgView.translatesAutoresizingMaskIntoConstraints = false
+        vertStackView.translatesAutoresizingMaskIntoConstraints = false
+        nameLabel.translatesAutoresizingMaskIntoConstraints = false
+        canSpendLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        addSubview(imgView)
+        addSubview(vertStackView)
+        
+        imgView.topAnchor.constraint(equalTo: topAnchor, constant: 14).isActive = true
+        imgView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -14).isActive = true
+        imgView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 14).isActive = true
+        imgView.widthAnchor.constraint(equalTo: imgView.heightAnchor, multiplier: 1).isActive = true
+        
+        vertStackView.topAnchor.constraint(equalTo: topAnchor, constant: 20).isActive = true
+        vertStackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -20).isActive = true
+        vertStackView.leadingAnchor.constraint(equalTo: imgView.trailingAnchor, constant: 8).isActive = true
+        vertStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -16).isActive = true
+        
+        nameLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        canSpendLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        
     }
     
-    required init?(coder: NSCoder) {
+    public func setupUI(with item: LimitPosition){
+        nameLabel.text = item.name
+        canSpendLabel.text = "Max: " + String(item.limit) + " ₽"
+        alreadySpendLabel.text = "Spent: " + String(item.spent) + " ₽    "
+        imgView.image = UIImage(named: item.image)
+        if item.limit - item.spent < 0 {
+            alreadySpendLabel.textColor = .red
+        }
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
@@ -37,6 +76,7 @@ final class LimitsCell: UITableViewCell{
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        
     }
 }
+
+
