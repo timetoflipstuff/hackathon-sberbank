@@ -1,14 +1,21 @@
 //
+//  SpendingsTableViewController.swift
+//  hackaton-sberbank
+//
+//  Created by Alex Mikhaylov on 16/11/2019.
+//  Copyright © 2019 Sberbank-hackaton. All rights reserved.
+//
+
+//
 //  SpendingsViewController.swift
 //  hackaton-sberbank
 //
 //  Created by Alexander on 16.11.2019.
 //  Copyright © 2019 Sberbank-hackaton. All rights reserved.
 //
-
 import UIKit
 
-class SpendingsTableViewController: UITableViewController {
+class SpendingsViewController: UITableViewController {
     
     private let cellId = "cellId"
     
