@@ -17,6 +17,13 @@
 		40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */; };
 		40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E4237FFCB8003EF9D9 /* AccountVC.swift */; };
 		40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */; };
+		843AF2BE23807E370050FAB4 /* LimitsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2B723807E370050FAB4 /* LimitsHeader.swift */; };
+		843AF2BF23807E370050FAB4 /* GoalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2B823807E370050FAB4 /* GoalsCell.swift */; };
+		843AF2C023807E370050FAB4 /* GoalsBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2B923807E370050FAB4 /* GoalsBlockCell.swift */; };
+		843AF2C123807E370050FAB4 /* LimitsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2BA23807E370050FAB4 /* LimitsCell.swift */; };
+		843AF2C223807E370050FAB4 /* LimitsAndGoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2BB23807E370050FAB4 /* LimitsAndGoalsVC.swift */; };
+		843AF2C323807E370050FAB4 /* LimitsBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2BC23807E370050FAB4 /* LimitsBlockCell.swift */; };
+		843AF2C423807E370050FAB4 /* GoalsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2BD23807E370050FAB4 /* GoalsHeader.swift */; };
 		E663D4D3238003FB0073ADC2 /* AccountViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D2238003FB0073ADC2 /* AccountViewCell.swift */; };
 		E663D4D523802ECB0073ADC2 /* SpendingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */; };
 		E663D4D723802FF70073ADC2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D623802FF60073ADC2 /* CircleView.swift */; };
@@ -38,6 +45,13 @@
 		40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
 		40A444E4237FFCB8003EF9D9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsVC.swift; sourceTree = "<group>"; };
+		843AF2B723807E370050FAB4 /* LimitsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsHeader.swift; sourceTree = "<group>"; };
+		843AF2B823807E370050FAB4 /* GoalsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsCell.swift; sourceTree = "<group>"; };
+		843AF2B923807E370050FAB4 /* GoalsBlockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsBlockCell.swift; sourceTree = "<group>"; };
+		843AF2BA23807E370050FAB4 /* LimitsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsCell.swift; sourceTree = "<group>"; };
+		843AF2BB23807E370050FAB4 /* LimitsAndGoalsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsAndGoalsVC.swift; sourceTree = "<group>"; };
+		843AF2BC23807E370050FAB4 /* LimitsBlockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsBlockCell.swift; sourceTree = "<group>"; };
+		843AF2BD23807E370050FAB4 /* GoalsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsHeader.swift; sourceTree = "<group>"; };
 		E663D4D2238003FB0073ADC2 /* AccountViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCell.swift; sourceTree = "<group>"; };
 		E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsTableViewController.swift; sourceTree = "<group>"; };
 		E663D4D623802FF60073ADC2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
@@ -101,6 +115,7 @@
 				40A444E0237FFC46003EF9D9 /* Account */,
 				40A444DF237FFC17003EF9D9 /* Spendings */,
 				40A444DE237FFAEF003EF9D9 /* Statistics */,
+				843AF2B623807E370050FAB4 /* LimitsAndGoals */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -159,6 +174,20 @@
 				E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */,
 			);
 			path = Manager;
+			sourceTree = "<group>";
+		};
+		843AF2B623807E370050FAB4 /* LimitsAndGoals */ = {
+			isa = PBXGroup;
+			children = (
+				843AF2B723807E370050FAB4 /* LimitsHeader.swift */,
+				843AF2B823807E370050FAB4 /* GoalsCell.swift */,
+				843AF2B923807E370050FAB4 /* GoalsBlockCell.swift */,
+				843AF2BA23807E370050FAB4 /* LimitsCell.swift */,
+				843AF2BB23807E370050FAB4 /* LimitsAndGoalsVC.swift */,
+				843AF2BC23807E370050FAB4 /* LimitsBlockCell.swift */,
+				843AF2BD23807E370050FAB4 /* GoalsHeader.swift */,
+			);
+			path = LimitsAndGoals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +260,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				843AF2C223807E370050FAB4 /* LimitsAndGoalsVC.swift in Sources */,
+				843AF2BF23807E370050FAB4 /* GoalsCell.swift in Sources */,
+				843AF2C123807E370050FAB4 /* LimitsCell.swift in Sources */,
 				E663D4D723802FF70073ADC2 /* CircleView.swift in Sources */,
 				E663D4DB238030060073ADC2 /* StatisticViewController.swift in Sources */,
+				843AF2C323807E370050FAB4 /* LimitsBlockCell.swift in Sources */,
 				40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */,
 				40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */,
 				11FF7ACF238008FC00882EF0 /* SpendingsTableViewCell.swift in Sources */,
@@ -242,9 +275,12 @@
 				11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */,
 				11FF7AC92380014300882EF0 /* GeneralPeopleCollectionView.swift in Sources */,
 				E663D4D523802ECB0073ADC2 /* SpendingsTableViewController.swift in Sources */,
+				843AF2BE23807E370050FAB4 /* LimitsHeader.swift in Sources */,
 				11FF7ACD238007D300882EF0 /* PeopleCollectionViewCell.swift in Sources */,
+				843AF2C023807E370050FAB4 /* GoalsBlockCell.swift in Sources */,
 				E663D4DD238030A80073ADC2 /* SpendingsEnum.swift in Sources */,
 				E663D4D3238003FB0073ADC2 /* AccountViewCell.swift in Sources */,
+				843AF2C423807E370050FAB4 /* GoalsHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
