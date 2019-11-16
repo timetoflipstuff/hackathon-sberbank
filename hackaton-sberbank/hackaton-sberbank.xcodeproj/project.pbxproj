@@ -11,10 +11,13 @@
 		11FF7AB6237FF0C500882EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7AB5237FF0C500882EF0 /* Assets.xcassets */; };
 		11FF7AB9237FF0C500882EF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7AB7237FF0C500882EF0 /* LaunchScreen.storyboard */; };
 		11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AC0237FF0EF00882EF0 /* BaseTabBarController.swift */; };
+		1CB4CEE8237FFDDE00CD707C /* SpendingsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4CEE7237FFDDE00CD707C /* SpendingsEnum.swift */; };
+		1CB4CEEA237FFF8200CD707C /* SpendingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CB4CEE9237FFF8200CD707C /* SpendingsVC.swift */; };
+		1CD01D832380102D00BD6424 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD01D822380102D00BD6424 /* StatisticViewController.swift */; };
+		1CD01D85238010AF00BD6424 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD01D84238010AF00BD6424 /* CircleView.swift */; };
+		1CD01D872380266500BD6424 /* SpensingNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD01D862380266500BD6424 /* SpensingNumbers.swift */; };
 		40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */; };
 		40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E4237FFCB8003EF9D9 /* AccountVC.swift */; };
-		40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */; };
-		40A444E9237FFCD9003EF9D9 /* StatisticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E8237FFCD9003EF9D9 /* StatisticsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,10 +27,13 @@
 		11FF7AB8237FF0C500882EF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11FF7ABA237FF0C500882EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11FF7AC0237FF0EF00882EF0 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		1CB4CEE7237FFDDE00CD707C /* SpendingsEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsEnum.swift; sourceTree = SOURCE_ROOT; };
+		1CB4CEE9237FFF8200CD707C /* SpendingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsVC.swift; sourceTree = "<group>"; };
+		1CD01D822380102D00BD6424 /* StatisticViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
+		1CD01D84238010AF00BD6424 /* CircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
+		1CD01D862380266500BD6424 /* SpensingNumbers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpensingNumbers.swift; path = "hackaton-sberbank/Scenes/Statistics/SpensingNumbers.swift"; sourceTree = SOURCE_ROOT; };
 		40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
 		40A444E4237FFCB8003EF9D9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
-		40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsVC.swift; sourceTree = "<group>"; };
-		40A444E8237FFCD9003EF9D9 /* StatisticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +78,8 @@
 		11FF7AC2237FF17200882EF0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1CB4CEE7237FFDDE00CD707C /* SpendingsEnum.swift */,
+				1CD01D862380266500BD6424 /* SpensingNumbers.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,7 +116,8 @@
 		40A444DE237FFAEF003EF9D9 /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
-				40A444E8237FFCD9003EF9D9 /* StatisticsVC.swift */,
+				1CD01D822380102D00BD6424 /* StatisticViewController.swift */,
+				1CD01D84238010AF00BD6424 /* CircleView.swift */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -116,7 +125,7 @@
 		40A444DF237FFC17003EF9D9 /* Spendings */ = {
 			isa = PBXGroup;
 			children = (
-				40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */,
+				1CB4CEE9237FFF8200CD707C /* SpendingsVC.swift */,
 			);
 			path = Spendings;
 			sourceTree = "<group>";
@@ -207,12 +216,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */,
+				1CD01D85238010AF00BD6424 /* CircleView.swift in Sources */,
+				1CD01D872380266500BD6424 /* SpensingNumbers.swift in Sources */,
+				1CB4CEEA237FFF8200CD707C /* SpendingsVC.swift in Sources */,
 				40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */,
 				11FF7AAF237FF0C400882EF0 /* AppDelegate.swift in Sources */,
+				1CB4CEE8237FFDDE00CD707C /* SpendingsEnum.swift in Sources */,
 				40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */,
+				1CD01D832380102D00BD6424 /* StatisticViewController.swift in Sources */,
 				11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */,
-				40A444E9237FFCD9003EF9D9 /* StatisticsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

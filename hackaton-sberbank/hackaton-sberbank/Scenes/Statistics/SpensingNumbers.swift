@@ -1,5 +1,5 @@
 //
-//  SpendingsVC.swift
+//  SpensingNumbers.swift
 //  hackaton-sberbank
 //
 //  Created by Алексей ]Чанов on 16/11/2019.
@@ -8,8 +8,9 @@
 
 import UIKit
 
-class SpendingsVC: UIViewController {
-
-  
-
-}
+struct SpensingNumbers {
+    
+    var spensing : Spendings
+    var sum : Int
+    
+    }

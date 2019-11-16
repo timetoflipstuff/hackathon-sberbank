@@ -18,7 +18,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window = UIWindow()
         window?.makeKeyAndVisible()
-        window?.rootViewController = BaseTabBarController()
+        window?.rootViewController = StatisticViewController()
         
         return true
     }
