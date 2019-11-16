@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		11FF7AAF237FF0C400882EF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AAE237FF0C400882EF0 /* AppDelegate.swift */; };
-		11FF7AB1237FF0C400882EF0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AB0237FF0C400882EF0 /* ViewController.swift */; };
 		11FF7AB6237FF0C500882EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7AB5237FF0C500882EF0 /* Assets.xcassets */; };
 		11FF7AB9237FF0C500882EF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7AB7237FF0C500882EF0 /* LaunchScreen.storyboard */; };
 		11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AC0237FF0EF00882EF0 /* BaseTabBarController.swift */; };
+		40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */; };
+		40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E4237FFCB8003EF9D9 /* AccountVC.swift */; };
+		40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */; };
+		40A444E9237FFCD9003EF9D9 /* StatisticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E8237FFCD9003EF9D9 /* StatisticsVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11FF7AAB237FF0C400882EF0 /* hackaton-sberbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackaton-sberbank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FF7AAE237FF0C400882EF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11FF7AB0237FF0C400882EF0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11FF7AB5237FF0C500882EF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11FF7AB8237FF0C500882EF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11FF7ABA237FF0C500882EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11FF7AC0237FF0EF00882EF0 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
+		40A444E4237FFCB8003EF9D9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
+		40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsVC.swift; sourceTree = "<group>"; };
+		40A444E8237FFCD9003EF9D9 /* StatisticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				11FF7AC2237FF17200882EF0 /* Model */,
-				11FF7AC3237FF17600882EF0 /* View */,
-				11FF7AC4237FF18900882EF0 /* Controller */,
+				11FF7AC3237FF17600882EF0 /* Scenes */,
+				11FF7AC4237FF18900882EF0 /* RootVC */,
 				11FF7AC5237FF19000882EF0 /* Supporting Files */,
 				11FF7ABA237FF0C500882EF0 /* Info.plist */,
 			);
@@ -70,20 +76,23 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		11FF7AC3237FF17600882EF0 /* View */ = {
+		11FF7AC3237FF17600882EF0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				40A444E1237FFC56003EF9D9 /* Manager */,
+				40A444E0237FFC46003EF9D9 /* Account */,
+				40A444DF237FFC17003EF9D9 /* Spendings */,
+				40A444DE237FFAEF003EF9D9 /* Statistics */,
 			);
-			path = View;
+			path = Scenes;
 			sourceTree = "<group>";
 		};
-		11FF7AC4237FF18900882EF0 /* Controller */ = {
+		11FF7AC4237FF18900882EF0 /* RootVC */ = {
 			isa = PBXGroup;
 			children = (
 				11FF7AC0237FF0EF00882EF0 /* BaseTabBarController.swift */,
-				11FF7AB0237FF0C400882EF0 /* ViewController.swift */,
 			);
-			path = Controller;
+			path = RootVC;
 			sourceTree = "<group>";
 		};
 		11FF7AC5237FF19000882EF0 /* Supporting Files */ = {
@@ -94,6 +103,38 @@
 				11FF7AB7237FF0C500882EF0 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		40A444DE237FFAEF003EF9D9 /* Statistics */ = {
+			isa = PBXGroup;
+			children = (
+				40A444E8237FFCD9003EF9D9 /* StatisticsVC.swift */,
+			);
+			path = Statistics;
+			sourceTree = "<group>";
+		};
+		40A444DF237FFC17003EF9D9 /* Spendings */ = {
+			isa = PBXGroup;
+			children = (
+				40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */,
+			);
+			path = Spendings;
+			sourceTree = "<group>";
+		};
+		40A444E0237FFC46003EF9D9 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				40A444E4237FFCB8003EF9D9 /* AccountVC.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		40A444E1237FFC56003EF9D9 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -166,9 +207,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11FF7AB1237FF0C400882EF0 /* ViewController.swift in Sources */,
+				40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */,
+				40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */,
 				11FF7AAF237FF0C400882EF0 /* AppDelegate.swift in Sources */,
+				40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */,
 				11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */,
+				40A444E9237FFCD9003EF9D9 /* StatisticsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
