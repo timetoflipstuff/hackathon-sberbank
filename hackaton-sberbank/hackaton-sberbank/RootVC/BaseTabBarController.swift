@@ -14,7 +14,7 @@ class BaseTabBarController: UITabBarController {
         super.viewDidLoad()
         
         viewControllers = [
-            createNewNavController(viewController: UIViewController(), title: "Статистика", imageName: "apps"),
+            createNewNavController(viewController: GeneralViewController(), title: "Основное", imageName: "apps"),
             createNewNavController(viewController: AccountVC(), title: "Счет", imageName: "search"),
             createNewNavController(viewController: UIViewController(), title: "Today", imageName: "today_icon")
         ]

@@ -11,6 +11,10 @@
 		11FF7AB6237FF0C500882EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7AB5237FF0C500882EF0 /* Assets.xcassets */; };
 		11FF7AB9237FF0C500882EF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7AB7237FF0C500882EF0 /* LaunchScreen.storyboard */; };
 		11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AC0237FF0EF00882EF0 /* BaseTabBarController.swift */; };
+		11FF7AC92380014300882EF0 /* GeneralPeopleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AC82380014300882EF0 /* GeneralPeopleCollectionView.swift */; };
+		11FF7ACB238004D800882EF0 /* SpendingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7ACA238004D800882EF0 /* SpendingsViewController.swift */; };
+		11FF7ACD238007D300882EF0 /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7ACC238007D300882EF0 /* PeopleCollectionViewCell.swift */; };
+		11FF7ACF238008FC00882EF0 /* SpendingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7ACE238008FC00882EF0 /* SpendingsTableViewCell.swift */; };
 		40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */; };
 		40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E4237FFCB8003EF9D9 /* AccountVC.swift */; };
 		40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */; };
@@ -25,6 +29,10 @@
 		11FF7AB8237FF0C500882EF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11FF7ABA237FF0C500882EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11FF7AC0237FF0EF00882EF0 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		11FF7AC82380014300882EF0 /* GeneralPeopleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPeopleCollectionView.swift; sourceTree = "<group>"; };
+		11FF7ACA238004D800882EF0 /* SpendingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsViewController.swift; sourceTree = "<group>"; };
+		11FF7ACC238007D300882EF0 /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
+		11FF7ACE238008FC00882EF0 /* SpendingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsTableViewCell.swift; sourceTree = "<group>"; };
 		40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
 		40A444E4237FFCB8003EF9D9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsVC.swift; sourceTree = "<group>"; };
@@ -136,6 +144,10 @@
 			isa = PBXGroup;
 			children = (
 				40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */,
+				11FF7ACE238008FC00882EF0 /* SpendingsTableViewCell.swift */,
+				11FF7AC82380014300882EF0 /* GeneralPeopleCollectionView.swift */,
+				11FF7ACC238007D300882EF0 /* PeopleCollectionViewCell.swift */,
+				11FF7ACA238004D800882EF0 /* SpendingsViewController.swift */,
 			);
 			path = Manager;
 			sourceTree = "<group>";
@@ -212,10 +224,14 @@
 			files = (
 				40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */,
 				40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */,
+				11FF7ACB238004D800882EF0 /* SpendingsViewController.swift in Sources */,
+				11FF7ACF238008FC00882EF0 /* SpendingsTableViewCell.swift in Sources */,
 				11FF7AAF237FF0C400882EF0 /* AppDelegate.swift in Sources */,
 				40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */,
 				11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */,
 				40A444E9237FFCD9003EF9D9 /* StatisticsVC.swift in Sources */,
+				11FF7AC92380014300882EF0 /* GeneralPeopleCollectionView.swift in Sources */,
+				11FF7ACD238007D300882EF0 /* PeopleCollectionViewCell.swift in Sources */,
 				E663D4D3238003FB0073ADC2 /* AccountViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
