@@ -6,9 +6,10 @@ final class LimitsHeader: UITableViewCell {
     
     private let mainLabel: UILabel = {
         let label = UILabel()
-        label.text = "Default LimitsHeader Text"
+        label.text = "Limits"
         label.textAlignment = .center
-        label.font = .systemFont(ofSize: 24)
+        label.font = UIFont.boldSystemFont(ofSize: 36)
+        label.textColor = .white
         return label
     }()
     
@@ -19,11 +20,13 @@ final class LimitsHeader: UITableViewCell {
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        self.backgroundColor = .clear
-        mainLabel.frame = self.contentView.frame
-        mainLabel.center = self.contentView.center
-        
+        self.backgroundColor = .pureGreen        
         contentView.addSubview(mainLabel)
+        
+        mainLabel.translatesAutoresizingMaskIntoConstraints = false
+        mainLabel.topAnchor.constraint(equalTo: topAnchor, constant: 14).isActive = true
+        mainLabel.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -14).isActive = true
+        mainLabel.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 14).isActive = true
     }
     
     required init?(coder: NSCoder) {

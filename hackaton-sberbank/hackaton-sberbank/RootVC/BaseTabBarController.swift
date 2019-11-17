@@ -17,7 +17,8 @@ class BaseTabBarController: CustomTabBarController {
             createNewNavController(viewController: GeneralViewController(), title: "General", imageName: "general"),
             createNewNavController(viewController: AccountVC(), title: "Account", imageName: "account"),
             createNewNavController(viewController: ChatsTableViewController(), title: "Chats", imageName: "chats"),
-            createNewNavController(viewController: StatisticsVC(), title: "Statistics", imageName: "statistics")
+            createNewNavController(viewController: StatisticsVC(), title: "Statistics", imageName: "statistics"),
+            createNewNavController(viewController: LimitsAndGoalsVC(), title: "Goals", imageName: "goal")
         ]
         
     }

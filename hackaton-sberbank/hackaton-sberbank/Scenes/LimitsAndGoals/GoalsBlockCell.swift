@@ -1,13 +1,6 @@
 
 import UIKit
 
-struct Goal {
-    var name: String
-    var planedAmmount: Int
-    var image: String
-    var isPaid: Bool
-}
-
 final class GoalsBlockCell: UITableViewCell {
     
     static let id = "GoalsBlockCell"
@@ -38,7 +31,7 @@ final class GoalsBlockCell: UITableViewCell {
         tableView.frame = CGRect(x: 0, y: 0, width: contentView.frame.maxX, height: 150.0)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = .green
+        tableView.backgroundColor = .clear
         contentView.addSubview(tableView)
         
     }

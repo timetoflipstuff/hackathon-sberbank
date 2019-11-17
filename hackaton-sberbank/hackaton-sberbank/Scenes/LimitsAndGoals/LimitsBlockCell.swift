@@ -1,13 +1,6 @@
 
 import UIKit
 
-struct LimitPosition {
-    var name: String
-    var spent: Float
-    var image: String
-    var limit: Float
-}
-
 final class LimitsBlockCell: UITableViewCell {
     
     static let id = "LimitsBlockCell"
@@ -39,7 +32,7 @@ final class LimitsBlockCell: UITableViewCell {
         tableView.frame = CGRect(x: 0, y: 0, width: contentView.frame.maxX, height: 150.0)
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.backgroundColor = .red
+        tableView.backgroundColor = .clear
         contentView.addSubview(tableView)
         
         tableView.register(LimitsCell.self, forCellReuseIdentifier: LimitsCell.id)

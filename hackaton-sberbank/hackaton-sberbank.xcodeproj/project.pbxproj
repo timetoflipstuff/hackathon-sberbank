@@ -27,6 +27,15 @@
 		40A444E3237FFCAE003EF9D9 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E2237FFCAE003EF9D9 /* GeneralViewController.swift */; };
 		40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E4237FFCB8003EF9D9 /* AccountVC.swift */; };
 		40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */; };
+		84414FA823812C0C00287455 /* LimitsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84414FA123812C0C00287455 /* LimitsHeader.swift */; };
+		84414FA923812C0C00287455 /* GoalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84414FA223812C0C00287455 /* GoalsCell.swift */; };
+		84414FAA23812C0C00287455 /* GoalsBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84414FA323812C0C00287455 /* GoalsBlockCell.swift */; };
+		84414FAB23812C0C00287455 /* LimitsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84414FA423812C0C00287455 /* LimitsCell.swift */; };
+		84414FAC23812C0C00287455 /* LimitsAndGoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84414FA523812C0C00287455 /* LimitsAndGoalsVC.swift */; };
+		84414FAD23812C0C00287455 /* LimitsBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84414FA623812C0C00287455 /* LimitsBlockCell.swift */; };
+		84414FAE23812C0C00287455 /* GoalsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84414FA723812C0C00287455 /* GoalsHeader.swift */; };
+		84414FB02381322900287455 /* Goal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84414FAF2381322900287455 /* Goal.swift */; };
+		84414FB22381324500287455 /* Limit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84414FB12381324500287455 /* Limit.swift */; };
 		E663D4D3238003FB0073ADC2 /* AccountViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D2238003FB0073ADC2 /* AccountViewCell.swift */; };
 		E663D4D523802ECB0073ADC2 /* SpendingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +63,15 @@
 		40A444E2237FFCAE003EF9D9 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		40A444E4237FFCB8003EF9D9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsVC.swift; sourceTree = "<group>"; };
+		84414FA123812C0C00287455 /* LimitsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsHeader.swift; sourceTree = "<group>"; };
+		84414FA223812C0C00287455 /* GoalsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsCell.swift; sourceTree = "<group>"; };
+		84414FA323812C0C00287455 /* GoalsBlockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsBlockCell.swift; sourceTree = "<group>"; };
+		84414FA423812C0C00287455 /* LimitsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsCell.swift; sourceTree = "<group>"; };
+		84414FA523812C0C00287455 /* LimitsAndGoalsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsAndGoalsVC.swift; sourceTree = "<group>"; };
+		84414FA623812C0C00287455 /* LimitsBlockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsBlockCell.swift; sourceTree = "<group>"; };
+		84414FA723812C0C00287455 /* GoalsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsHeader.swift; sourceTree = "<group>"; };
+		84414FAF2381322900287455 /* Goal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Goal.swift; sourceTree = "<group>"; };
+		84414FB12381324500287455 /* Limit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Limit.swift; sourceTree = "<group>"; };
 		E663D4D2238003FB0073ADC2 /* AccountViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCell.swift; sourceTree = "<group>"; };
 		E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +121,8 @@
 				11FF7AE22380B18A00882EF0 /* Person.swift */,
 				11FF7AE42380BBBC00882EF0 /* Spendings.swift */,
 				11FF7AF32380CF7B00882EF0 /* Message.swift */,
+				84414FAF2381322900287455 /* Goal.swift */,
+				84414FB12381324500287455 /* Limit.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -110,6 +130,7 @@
 		11FF7AC3237FF17600882EF0 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				84414FA023812C0C00287455 /* LimitsAndGoals */,
 				40A444E1237FFC56003EF9D9 /* Manager */,
 				40A444E0237FFC46003EF9D9 /* Account */,
 				40A444DF237FFC17003EF9D9 /* Spendings */,
@@ -203,6 +224,20 @@
 			path = Manager;
 			sourceTree = "<group>";
 		};
+		84414FA023812C0C00287455 /* LimitsAndGoals */ = {
+			isa = PBXGroup;
+			children = (
+				84414FA523812C0C00287455 /* LimitsAndGoalsVC.swift */,
+				84414FA123812C0C00287455 /* LimitsHeader.swift */,
+				84414FA223812C0C00287455 /* GoalsCell.swift */,
+				84414FA323812C0C00287455 /* GoalsBlockCell.swift */,
+				84414FA423812C0C00287455 /* LimitsCell.swift */,
+				84414FA623812C0C00287455 /* LimitsBlockCell.swift */,
+				84414FA723812C0C00287455 /* GoalsHeader.swift */,
+			);
+			path = LimitsAndGoals;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -273,8 +308,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84414FB22381324500287455 /* Limit.swift in Sources */,
 				40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */,
 				11FF7AF02380CA6B00882EF0 /* StatisticsVC.swift in Sources */,
+				84414FAA23812C0C00287455 /* GoalsBlockCell.swift in Sources */,
 				40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */,
 				11FF7ACF238008FC00882EF0 /* SpendingsTableViewCell.swift in Sources */,
 				11FF7AAF237FF0C400882EF0 /* AppDelegate.swift in Sources */,
@@ -285,11 +322,18 @@
 				11FF7AEC2380CA4500882EF0 /* GradientView.swift in Sources */,
 				11FF7AEE2380CA5600882EF0 /* StatisticsViewCell.swift in Sources */,
 				11FF7AE12380A8F100882EF0 /* Extensions.swift in Sources */,
+				84414FAB23812C0C00287455 /* LimitsCell.swift in Sources */,
 				11FF7AEA2380CA3300882EF0 /* SpendingsModel.swift in Sources */,
 				E663D4D523802ECB0073ADC2 /* SpendingsTableViewController.swift in Sources */,
+				84414FA823812C0C00287455 /* LimitsHeader.swift in Sources */,
 				11FF7ACD238007D300882EF0 /* PeopleCollectionViewCell.swift in Sources */,
+				84414FA923812C0C00287455 /* GoalsCell.swift in Sources */,
 				11FF7AE32380B18A00882EF0 /* Person.swift in Sources */,
+				84414FB02381322900287455 /* Goal.swift in Sources */,
+				84414FAC23812C0C00287455 /* LimitsAndGoalsVC.swift in Sources */,
+				84414FAD23812C0C00287455 /* LimitsBlockCell.swift in Sources */,
 				E663D4D3238003FB0073ADC2 /* AccountViewCell.swift in Sources */,
+				84414FAE23812C0C00287455 /* GoalsHeader.swift in Sources */,
 				11FF7AF42380CF7B00882EF0 /* Message.swift in Sources */,
 				11FF7AE52380BBBC00882EF0 /* Spendings.swift in Sources */,
 				11FF7AE72380C67800882EF0 /* ChatsTableViewController.swift in Sources */,
@@ -433,13 +477,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46NZ6QG8YF;
 				INFOPLIST_FILE = "hackaton-sberbank/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexander.hackaton-sberbank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -451,13 +496,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46NZ6QG8YF;
 				INFOPLIST_FILE = "hackaton-sberbank/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexander.hackaton-sberbank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

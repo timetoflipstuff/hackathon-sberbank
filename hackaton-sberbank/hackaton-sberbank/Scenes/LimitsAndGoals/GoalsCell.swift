@@ -55,11 +55,11 @@ final class GoalsCell: UITableViewCell {
     public func setupUI(with item: Goal){
         imgView.image = UIImage(named: item.image)
         nameLabel.text = item.name
-        planAmmountLabel.text = String(item.planedAmmount) + " ₽"
+        planAmmountLabel.text = "$" + String(item.planedAmmount)
         
 
-        nameLabel.textColor = item.isPaid ? .green : .red
-        planAmmountLabel.textColor = item.isPaid ? .green : .red
+        nameLabel.textColor = item.isPaid ? .pureGreen : .black
+        planAmmountLabel.textColor = item.isPaid ? .pureGreen : .black
     }
     
     @objc func payTapped(){

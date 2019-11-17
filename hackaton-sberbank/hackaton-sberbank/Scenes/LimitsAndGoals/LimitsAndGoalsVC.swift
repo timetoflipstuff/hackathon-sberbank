@@ -37,28 +37,20 @@ final class LimitsAndGoalsVC : UIViewController {
             var cell = UITableViewCell()
             switch indexPath.row {
             case 0:
-                cell = tableView.dequeueReusableCell(withIdentifier: GoalsHeader.id, for: indexPath) as! GoalsHeader
-            case 1:
                 cell = tableView.dequeueReusableCell(withIdentifier: GoalsBlockCell.id, for: indexPath) as! GoalsBlockCell
                 (cell as! GoalsBlockCell).setupUI(tableHeight: 300, tableWidth: tableView.frame.maxX)
-            case 2:
+            case 1:
                 cell = tableView.dequeueReusableCell(withIdentifier: LimitsHeader.id, for: indexPath) as! LimitsHeader
-            case 3:
+            case 2:
                 cell = tableView.dequeueReusableCell(withIdentifier: LimitsBlockCell.id, for: indexPath) as! LimitsBlockCell
                 (cell as! LimitsBlockCell).setupUI(tableHeight: 300, tableWidth: tableView.frame.maxX)
-
             default: break
             }
             return cell
         }
         
         func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            let height = (indexPath.row == 1 || indexPath.row == 3) ? 300 : 100
+            let height = (indexPath.row == 0 || indexPath.row == 2) ? 300 : 55
             return CGFloat(height)
         }
-        
-
-    
-    
-    
 }

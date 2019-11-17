@@ -54,8 +54,8 @@ final class LimitsCell: UITableViewCell{
     
     public func setupUI(with item: LimitPosition){
         nameLabel.text = item.name
-        canSpendLabel.text = "Max: " + String(item.limit) + " ₽"
-        alreadySpendLabel.text = "Spent: " + String(item.spent) + " ₽    "
+        canSpendLabel.text = "Max: $" + String(item.limit)
+        alreadySpendLabel.text = "Spent: $" + String(item.spent)
         imgView.image = UIImage(named: item.image)
         if item.limit - item.spent < 0 {
             alreadySpendLabel.textColor = .red
