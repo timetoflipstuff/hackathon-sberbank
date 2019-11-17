@@ -8,16 +8,16 @@
 
 import UIKit
 
-class BaseTabBarController: UITabBarController {
+class BaseTabBarController: CustomTabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         viewControllers = [
-            createNewNavController(viewController: GeneralViewController(), title: "Main", imageName: "apps"),
-            createNewNavController(viewController: AccountVC(), title: "Account", imageName: "search"),
-            createNewNavController(viewController: StatisticViewController(), title: "Statistics", imageName: "today_icon"),
-            createNewNavController(viewController: LimitsAndGoalsVC(), title: "Lims&Goals", imageName: "today_icon")
+            createNewNavController(viewController: GeneralViewController(), title: "General", imageName: "general"),
+            createNewNavController(viewController: AccountVC(), title: "Account", imageName: "account"),
+            createNewNavController(viewController: ChatsTableViewController(), title: "Chats", imageName: "chats"),
+            createNewNavController(viewController: StatisticsVC(), title: "Statistics", imageName: "statistics")
         ]
         
     }
@@ -30,7 +30,7 @@ class BaseTabBarController: UITabBarController {
         navController.navigationBar.prefersLargeTitles = true
         navController.view.backgroundColor = .white
         navController.tabBarItem.title = title
-        navController.tabBarItem.image = UIImage(named: imageName)
+        navController.tabBarItem.image = UIImage(named: imageName)?.withRenderingMode(.alwaysOriginal)
         
         return navController
     }

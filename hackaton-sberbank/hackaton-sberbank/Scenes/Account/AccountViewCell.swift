@@ -9,12 +9,15 @@
 import UIKit
 
 class AccountViewCell: UITableViewCell {
-
     
-    public static let reuseId = "memberCell"
+    public static let reuseId = "activeMemberCell"
     
     public let nameLabel = UILabel()
     public let balanceLabel = UILabel()
+    
+    public let monExpLabel = UILabel()
+    public let incomeLabel = UILabel()
+    public let limitLabel = UILabel()
     
     public var imgView = UIImageView()
     
@@ -28,41 +31,56 @@ class AccountViewCell: UITableViewCell {
         imgView.backgroundColor = .green
         imgView.layer.cornerRadius = 36
         imgView.layer.masksToBounds = true
-        //memberImg.layer.cornerRadius = frame.width / 2
         
         stackView = UIStackView(arrangedSubviews: [nameLabel, balanceLabel])
         stackView.axis = .vertical
         
+        subStackView = UIStackView(arrangedSubviews: [incomeLabel, monExpLabel, limitLabel])
+        subStackView.axis = .vertical
         
-//        nameLabel.backgroundColor = .brown
-//        balanceLabel.backgroundColor = .red
+        balanceLabel.textColor = .pureGreen
         
-        balanceLabel.textColor = .init(red: 0.0, green: 1.0, blue: 0.5, alpha: 1)
+        monExpLabel.textColor = .pureGreen
+        incomeLabel.textColor = .pureGreen
+        limitLabel.textColor = .pureGreen
         
         imgView.translatesAutoresizingMaskIntoConstraints = false
         stackView.translatesAutoresizingMaskIntoConstraints = false
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         balanceLabel.translatesAutoresizingMaskIntoConstraints = false
+        
+        monExpLabel.translatesAutoresizingMaskIntoConstraints = false
+        incomeLabel.translatesAutoresizingMaskIntoConstraints = false
+        limitLabel.translatesAutoresizingMaskIntoConstraints = false
+        subStackView.translatesAutoresizingMaskIntoConstraints = false
+        
         stackView.spacing = 8
         stackView.distribution = .fillEqually
         
+        subStackView.distribution = .fillEqually
+        
+        subStackView.backgroundColor = .brown
+        
         addSubview(imgView)
         addSubview(stackView)
+        addSubview(subStackView)
         
         imgView.topAnchor.constraint(equalTo: topAnchor, constant: 14).isActive = true
-        imgView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -14).isActive = true
         imgView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 14).isActive = true
+        imgView.heightAnchor.constraint(equalToConstant: 72).isActive = true
         imgView.widthAnchor.constraint(equalTo: imgView.heightAnchor, multiplier: 1).isActive = true
         
-        
+        clipsToBounds = true
         
         stackView.topAnchor.constraint(equalTo: topAnchor, constant: 24).isActive = true
-        stackView.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -24).isActive = true
+        stackView.heightAnchor.constraint(equalToConstant: 52).isActive = true
         stackView.leadingAnchor.constraint(equalTo: imgView.trailingAnchor, constant: 8).isActive = true
         stackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -8).isActive = true
         
-        nameLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
-        balanceLabel.heightAnchor.constraint(equalToConstant: 20).isActive = true
+        subStackView.topAnchor.constraint(equalTo: imgView.bottomAnchor, constant: 14).isActive = true
+        subStackView.heightAnchor.constraint(equalToConstant: 100).isActive = true
+        subStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 8).isActive = true
+        subStackView.trailingAnchor.constraint(equalTo: trailingAnchor).isActive = true
         
     }
     
@@ -74,11 +92,9 @@ class AccountViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
-
+    
 }

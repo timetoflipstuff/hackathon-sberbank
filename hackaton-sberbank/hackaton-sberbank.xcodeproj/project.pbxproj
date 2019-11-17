@@ -8,56 +8,54 @@
 
 /* Begin PBXBuildFile section */
 		11FF7AAF237FF0C400882EF0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AAE237FF0C400882EF0 /* AppDelegate.swift */; };
+		11FF7AB6237FF0C500882EF0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7AB5237FF0C500882EF0 /* Assets.xcassets */; };
 		11FF7AB9237FF0C500882EF0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11FF7AB7237FF0C500882EF0 /* LaunchScreen.storyboard */; };
 		11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AC0237FF0EF00882EF0 /* BaseTabBarController.swift */; };
-		11FF7AC92380014300882EF0 /* GeneralPeopleCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AC82380014300882EF0 /* GeneralPeopleCollectionView.swift */; };
+		11FF7AC92380014300882EF0 /* TopBarCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AC82380014300882EF0 /* TopBarCollectionViewController.swift */; };
 		11FF7ACD238007D300882EF0 /* PeopleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7ACC238007D300882EF0 /* PeopleCollectionViewCell.swift */; };
 		11FF7ACF238008FC00882EF0 /* SpendingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7ACE238008FC00882EF0 /* SpendingsTableViewCell.swift */; };
-		40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */; };
+		11FF7AE12380A8F100882EF0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AE02380A8F100882EF0 /* Extensions.swift */; };
+		11FF7AE32380B18A00882EF0 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AE22380B18A00882EF0 /* Person.swift */; };
+		11FF7AE52380BBBC00882EF0 /* Spendings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AE42380BBBC00882EF0 /* Spendings.swift */; };
+		11FF7AE72380C67800882EF0 /* ChatsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AE62380C67800882EF0 /* ChatsTableViewController.swift */; };
+		11FF7AEA2380CA3300882EF0 /* SpendingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AE92380CA3300882EF0 /* SpendingsModel.swift */; };
+		11FF7AEC2380CA4500882EF0 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AEB2380CA4500882EF0 /* GradientView.swift */; };
+		11FF7AEE2380CA5600882EF0 /* StatisticsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AED2380CA5600882EF0 /* StatisticsViewCell.swift */; };
+		11FF7AF02380CA6B00882EF0 /* StatisticsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AEF2380CA6B00882EF0 /* StatisticsVC.swift */; };
+		11FF7AF22380CDB600882EF0 /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AF12380CDB600882EF0 /* ChatTableViewCell.swift */; };
+		11FF7AF42380CF7B00882EF0 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11FF7AF32380CF7B00882EF0 /* Message.swift */; };
+		40A444E3237FFCAE003EF9D9 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E2237FFCAE003EF9D9 /* GeneralViewController.swift */; };
 		40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E4237FFCB8003EF9D9 /* AccountVC.swift */; };
 		40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */; };
-		843AF2BE23807E370050FAB4 /* LimitsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2B723807E370050FAB4 /* LimitsHeader.swift */; };
-		843AF2BF23807E370050FAB4 /* GoalsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2B823807E370050FAB4 /* GoalsCell.swift */; };
-		843AF2C023807E370050FAB4 /* GoalsBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2B923807E370050FAB4 /* GoalsBlockCell.swift */; };
-		843AF2C123807E370050FAB4 /* LimitsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2BA23807E370050FAB4 /* LimitsCell.swift */; };
-		843AF2C223807E370050FAB4 /* LimitsAndGoalsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2BB23807E370050FAB4 /* LimitsAndGoalsVC.swift */; };
-		843AF2C323807E370050FAB4 /* LimitsBlockCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2BC23807E370050FAB4 /* LimitsBlockCell.swift */; };
-		843AF2C423807E370050FAB4 /* GoalsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843AF2BD23807E370050FAB4 /* GoalsHeader.swift */; };
-		843AF2C62380A1E80050FAB4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 843AF2C52380A1E80050FAB4 /* Assets.xcassets */; };
 		E663D4D3238003FB0073ADC2 /* AccountViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D2238003FB0073ADC2 /* AccountViewCell.swift */; };
 		E663D4D523802ECB0073ADC2 /* SpendingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */; };
-		E663D4D723802FF70073ADC2 /* CircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D623802FF60073ADC2 /* CircleView.swift */; };
-		E663D4D923802FFF0073ADC2 /* SpensingNumbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4D823802FFF0073ADC2 /* SpensingNumbers.swift */; };
-		E663D4DB238030060073ADC2 /* StatisticViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4DA238030050073ADC2 /* StatisticViewController.swift */; };
-		E663D4DD238030A80073ADC2 /* SpendingsEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = E663D4DC238030A70073ADC2 /* SpendingsEnum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11FF7AAB237FF0C400882EF0 /* hackaton-sberbank.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hackaton-sberbank.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11FF7AAE237FF0C400882EF0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		11FF7AB5237FF0C500882EF0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11FF7AB8237FF0C500882EF0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11FF7ABA237FF0C500882EF0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		11FF7AC0237FF0EF00882EF0 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
-		11FF7AC82380014300882EF0 /* GeneralPeopleCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPeopleCollectionView.swift; sourceTree = "<group>"; };
+		11FF7AC82380014300882EF0 /* TopBarCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopBarCollectionViewController.swift; sourceTree = "<group>"; };
 		11FF7ACC238007D300882EF0 /* PeopleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleCollectionViewCell.swift; sourceTree = "<group>"; };
 		11FF7ACE238008FC00882EF0 /* SpendingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsTableViewCell.swift; sourceTree = "<group>"; };
-		40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerVC.swift; sourceTree = "<group>"; };
+		11FF7AE02380A8F100882EF0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		11FF7AE22380B18A00882EF0 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		11FF7AE42380BBBC00882EF0 /* Spendings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spendings.swift; sourceTree = "<group>"; };
+		11FF7AE62380C67800882EF0 /* ChatsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatsTableViewController.swift; path = "hackaton-sberbank/Scenes/Manager/Chats/ChatsTableViewController.swift"; sourceTree = SOURCE_ROOT; };
+		11FF7AE92380CA3300882EF0 /* SpendingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsModel.swift; sourceTree = "<group>"; };
+		11FF7AEB2380CA4500882EF0 /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		11FF7AED2380CA5600882EF0 /* StatisticsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsViewCell.swift; sourceTree = "<group>"; };
+		11FF7AEF2380CA6B00882EF0 /* StatisticsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsVC.swift; sourceTree = "<group>"; };
+		11FF7AF12380CDB600882EF0 /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatTableViewCell.swift; path = "hackaton-sberbank/Scenes/Statistics/ChatTableViewCell.swift"; sourceTree = SOURCE_ROOT; };
+		11FF7AF32380CF7B00882EF0 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = "hackaton-sberbank/Model/Message.swift"; sourceTree = SOURCE_ROOT; };
+		40A444E2237FFCAE003EF9D9 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		40A444E4237FFCB8003EF9D9 /* AccountVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountVC.swift; sourceTree = "<group>"; };
 		40A444E6237FFCC2003EF9D9 /* SpendingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsVC.swift; sourceTree = "<group>"; };
-		843AF2B723807E370050FAB4 /* LimitsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsHeader.swift; sourceTree = "<group>"; };
-		843AF2B823807E370050FAB4 /* GoalsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsCell.swift; sourceTree = "<group>"; };
-		843AF2B923807E370050FAB4 /* GoalsBlockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsBlockCell.swift; sourceTree = "<group>"; };
-		843AF2BA23807E370050FAB4 /* LimitsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsCell.swift; sourceTree = "<group>"; };
-		843AF2BB23807E370050FAB4 /* LimitsAndGoalsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsAndGoalsVC.swift; sourceTree = "<group>"; };
-		843AF2BC23807E370050FAB4 /* LimitsBlockCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LimitsBlockCell.swift; sourceTree = "<group>"; };
-		843AF2BD23807E370050FAB4 /* GoalsHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoalsHeader.swift; sourceTree = "<group>"; };
-		843AF2C52380A1E80050FAB4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../../../.Trash/Assets.xcassets; sourceTree = "<group>"; };
 		E663D4D2238003FB0073ADC2 /* AccountViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewCell.swift; sourceTree = "<group>"; };
 		E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingsTableViewController.swift; sourceTree = "<group>"; };
-		E663D4D623802FF60073ADC2 /* CircleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleView.swift; sourceTree = "<group>"; };
-		E663D4D823802FFF0073ADC2 /* SpensingNumbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpensingNumbers.swift; sourceTree = "<group>"; };
-		E663D4DA238030050073ADC2 /* StatisticViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatisticViewController.swift; sourceTree = "<group>"; };
-		E663D4DC238030A70073ADC2 /* SpendingsEnum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpendingsEnum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,8 +100,9 @@
 		11FF7AC2237FF17200882EF0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				E663D4DC238030A70073ADC2 /* SpendingsEnum.swift */,
-				E663D4D823802FFF0073ADC2 /* SpensingNumbers.swift */,
+				11FF7AE22380B18A00882EF0 /* Person.swift */,
+				11FF7AE42380BBBC00882EF0 /* Spendings.swift */,
+				11FF7AF32380CF7B00882EF0 /* Message.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -115,7 +114,6 @@
 				40A444E0237FFC46003EF9D9 /* Account */,
 				40A444DF237FFC17003EF9D9 /* Spendings */,
 				40A444DE237FFAEF003EF9D9 /* Statistics */,
-				843AF2B623807E370050FAB4 /* LimitsAndGoals */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -131,18 +129,49 @@
 		11FF7AC5237FF19000882EF0 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				843AF2C52380A1E80050FAB4 /* Assets.xcassets */,
+				11FF7AE02380A8F100882EF0 /* Extensions.swift */,
 				11FF7AAE237FF0C400882EF0 /* AppDelegate.swift */,
+				11FF7AB5237FF0C500882EF0 /* Assets.xcassets */,
 				11FF7AB7237FF0C500882EF0 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		11FF7ADE23809E7800882EF0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				40A444E2237FFCAE003EF9D9 /* GeneralViewController.swift */,
+				11FF7AC82380014300882EF0 /* TopBarCollectionViewController.swift */,
+				E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11FF7ADF23809E8100882EF0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11FF7ACC238007D300882EF0 /* PeopleCollectionViewCell.swift */,
+				11FF7ACE238008FC00882EF0 /* SpendingsTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11FF7AE82380C67D00882EF0 /* Chats */ = {
+			isa = PBXGroup;
+			children = (
+				11FF7AE62380C67800882EF0 /* ChatsTableViewController.swift */,
+				11FF7AF12380CDB600882EF0 /* ChatTableViewCell.swift */,
+			);
+			path = Chats;
+			sourceTree = "<group>";
+		};
 		40A444DE237FFAEF003EF9D9 /* Statistics */ = {
 			isa = PBXGroup;
 			children = (
-				E663D4DA238030050073ADC2 /* StatisticViewController.swift */,
-				E663D4D623802FF60073ADC2 /* CircleView.swift */,
+				11FF7AEB2380CA4500882EF0 /* GradientView.swift */,
+				11FF7AE92380CA3300882EF0 /* SpendingsModel.swift */,
+				11FF7AED2380CA5600882EF0 /* StatisticsViewCell.swift */,
+				11FF7AEF2380CA6B00882EF0 /* StatisticsVC.swift */,
 			);
 			path = Statistics;
 			sourceTree = "<group>";
@@ -167,27 +196,11 @@
 		40A444E1237FFC56003EF9D9 /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				40A444E2237FFCAE003EF9D9 /* ManagerVC.swift */,
-				11FF7ACE238008FC00882EF0 /* SpendingsTableViewCell.swift */,
-				11FF7AC82380014300882EF0 /* GeneralPeopleCollectionView.swift */,
-				11FF7ACC238007D300882EF0 /* PeopleCollectionViewCell.swift */,
-				E663D4D423802ECB0073ADC2 /* SpendingsTableViewController.swift */,
+				11FF7AE82380C67D00882EF0 /* Chats */,
+				11FF7ADE23809E7800882EF0 /* Controllers */,
+				11FF7ADF23809E8100882EF0 /* Views */,
 			);
 			path = Manager;
-			sourceTree = "<group>";
-		};
-		843AF2B623807E370050FAB4 /* LimitsAndGoals */ = {
-			isa = PBXGroup;
-			children = (
-				843AF2BB23807E370050FAB4 /* LimitsAndGoalsVC.swift */,
-				843AF2B923807E370050FAB4 /* GoalsBlockCell.swift */,
-				843AF2B823807E370050FAB4 /* GoalsCell.swift */,
-				843AF2B723807E370050FAB4 /* LimitsHeader.swift */,
-				843AF2BC23807E370050FAB4 /* LimitsBlockCell.swift */,
-				843AF2BA23807E370050FAB4 /* LimitsCell.swift */,
-				843AF2BD23807E370050FAB4 /* GoalsHeader.swift */,
-			);
-			path = LimitsAndGoals;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,8 +261,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843AF2C62380A1E80050FAB4 /* Assets.xcassets in Resources */,
 				11FF7AB9237FF0C500882EF0 /* LaunchScreen.storyboard in Resources */,
+				11FF7AB6237FF0C500882EF0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,27 +273,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				843AF2C223807E370050FAB4 /* LimitsAndGoalsVC.swift in Sources */,
-				843AF2BF23807E370050FAB4 /* GoalsCell.swift in Sources */,
-				843AF2C123807E370050FAB4 /* LimitsCell.swift in Sources */,
-				E663D4D723802FF70073ADC2 /* CircleView.swift in Sources */,
-				E663D4DB238030060073ADC2 /* StatisticViewController.swift in Sources */,
-				843AF2C323807E370050FAB4 /* LimitsBlockCell.swift in Sources */,
 				40A444E7237FFCC2003EF9D9 /* SpendingsVC.swift in Sources */,
+				11FF7AF02380CA6B00882EF0 /* StatisticsVC.swift in Sources */,
 				40A444E5237FFCB8003EF9D9 /* AccountVC.swift in Sources */,
 				11FF7ACF238008FC00882EF0 /* SpendingsTableViewCell.swift in Sources */,
 				11FF7AAF237FF0C400882EF0 /* AppDelegate.swift in Sources */,
-				40A444E3237FFCAE003EF9D9 /* ManagerVC.swift in Sources */,
-				E663D4D923802FFF0073ADC2 /* SpensingNumbers.swift in Sources */,
+				11FF7AF22380CDB600882EF0 /* ChatTableViewCell.swift in Sources */,
+				40A444E3237FFCAE003EF9D9 /* GeneralViewController.swift in Sources */,
 				11FF7AC1237FF0EF00882EF0 /* BaseTabBarController.swift in Sources */,
-				11FF7AC92380014300882EF0 /* GeneralPeopleCollectionView.swift in Sources */,
+				11FF7AC92380014300882EF0 /* TopBarCollectionViewController.swift in Sources */,
+				11FF7AEC2380CA4500882EF0 /* GradientView.swift in Sources */,
+				11FF7AEE2380CA5600882EF0 /* StatisticsViewCell.swift in Sources */,
+				11FF7AE12380A8F100882EF0 /* Extensions.swift in Sources */,
+				11FF7AEA2380CA3300882EF0 /* SpendingsModel.swift in Sources */,
 				E663D4D523802ECB0073ADC2 /* SpendingsTableViewController.swift in Sources */,
-				843AF2BE23807E370050FAB4 /* LimitsHeader.swift in Sources */,
 				11FF7ACD238007D300882EF0 /* PeopleCollectionViewCell.swift in Sources */,
-				843AF2C023807E370050FAB4 /* GoalsBlockCell.swift in Sources */,
-				E663D4DD238030A80073ADC2 /* SpendingsEnum.swift in Sources */,
+				11FF7AE32380B18A00882EF0 /* Person.swift in Sources */,
 				E663D4D3238003FB0073ADC2 /* AccountViewCell.swift in Sources */,
-				843AF2C423807E370050FAB4 /* GoalsHeader.swift in Sources */,
+				11FF7AF42380CF7B00882EF0 /* Message.swift in Sources */,
+				11FF7AE52380BBBC00882EF0 /* Spendings.swift in Sources */,
+				11FF7AE72380C67800882EF0 /* ChatsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -421,14 +433,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46NZ6QG8YF;
 				INFOPLIST_FILE = "hackaton-sberbank/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexander.hackaton-sberbank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -440,14 +451,13 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 46NZ6QG8YF;
 				INFOPLIST_FILE = "hackaton-sberbank/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.alexander.hackaton-sberbank";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

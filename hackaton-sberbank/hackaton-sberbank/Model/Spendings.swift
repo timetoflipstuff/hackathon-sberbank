@@ -1,5 +1,5 @@
 //
-//  Person.swift
+//  Spendings.swift
 //  hackaton-sberbank
 //
 //  Created by Alexander on 17.11.2019.
@@ -8,6 +8,8 @@
 
 import Foundation
 
-struct Person {
+struct SpendingsInformation {
+    var place: String
+    var price: Double
     var profilePic: String
 }
