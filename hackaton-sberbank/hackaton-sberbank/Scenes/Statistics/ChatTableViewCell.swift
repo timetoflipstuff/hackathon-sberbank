@@ -29,7 +29,7 @@ class ChatTableViewCell: UITableViewCell {
     
     let messageLabel: UILabel = {
         let label = UILabel()
-        label.font = .systemFont(ofSize: 20)
+        label.font = .systemFont(ofSize: 24)
         label.numberOfLines = 0
         label.textColor = .darkGray
         label.translatesAutoresizingMaskIntoConstraints = false

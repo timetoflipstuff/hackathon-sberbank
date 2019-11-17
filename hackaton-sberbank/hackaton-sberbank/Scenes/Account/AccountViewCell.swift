@@ -39,6 +39,8 @@ class AccountViewCell: UITableViewCell {
         subStackView.axis = .vertical
         
         balanceLabel.textColor = .pureGreen
+        balanceLabel.font = .systemFont(ofSize: 20)
+        nameLabel.font = .systemFont(ofSize: 24)
         
         monExpLabel.textColor = .pureGreen
         incomeLabel.textColor = .pureGreen

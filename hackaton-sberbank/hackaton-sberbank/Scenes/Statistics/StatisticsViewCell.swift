@@ -22,7 +22,7 @@ class StatisticsViewCell: UICollectionViewCell {
         super.init(frame: frame)
         
         label.textColor = .black
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.font = .systemFont(ofSize: 24)
         
         view.animateGradient()
         view.layer.cornerRadius = contentView.frame.height/20
