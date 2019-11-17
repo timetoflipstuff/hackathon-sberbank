@@ -5,10 +5,10 @@ final class GoalsBlockCell: UITableViewCell {
     
     static let id = "GoalsBlockCell"
     private let tableView = UITableView()
-    public var goal = [Goal(name: "Own appartment", planedAmmount: 10000, image: "goalHome", isPaid: false),
-                       Goal(name: "Lets beach bumming", planedAmmount: 10000, image: "goalHoliday", isPaid: true),
-                       Goal(name: "Want a car", planedAmmount: 5000, image: "goalCar", isPaid: false),
-                       Goal(name: "New Mac-book", planedAmmount: 5000, image: "goalMac", isPaid: true)]
+    public var goal = [Goal(name: "Own appartment", planedAmmount: 1000, image: "goalHome", isPaid: false),
+                       Goal(name: "Lets beach bumming", planedAmmount: 1000, image: "goalHoliday", isPaid: true),
+                       Goal(name: "Want a car", planedAmmount: 750, image: "goalCar", isPaid: false),
+                       Goal(name: "New Mac-book", planedAmmount: 500, image: "goalMac", isPaid: true)]
     
     private let mainLabel: UILabel = {
         let label = UILabel()

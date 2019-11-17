@@ -6,10 +6,10 @@ final class LimitsBlockCell: UITableViewCell {
     static let id = "LimitsBlockCell"
     
     private let tableView = UITableView()
-    public var limitPosition = [LimitPosition(name: "Home", spent: 40000, image: "house", limit: 40000),
-                            LimitPosition(name: "Food", spent: 5000, image: "food", limit: 10000),
-                            LimitPosition(name: "Entertainments", spent: 7000, image: "party", limit: 5000),
-                            LimitPosition(name: "Other", spent: 15000, image: "different", limit: 20000)]
+    public var limitPosition = [LimitPosition(name: "Home", spent: 1000, image: "house", limit: 1000),
+                            LimitPosition(name: "Food", spent: 500, image: "food", limit: 547),
+                            LimitPosition(name: "Entertainments", spent: 700, image: "party", limit: 427),
+                            LimitPosition(name: "Other", spent: 1500, image: "different", limit: 2000)]
     
     
     private let mainLabel: UILabel = {
