@@ -8,6 +8,7 @@
 Проект разрабатывался на языке Swift(5.0) с использованием архитектуры MVC. 
 При разработке использовались технологии UIKit, такие как коллекции и таблицы. Также для вывода статистики задействована библиотека CoreAnimation.
 
+![alt text](https://github.com/alexanderpct/hackathon-sberbank/tree/master/hackaton-sberbank/hackaton-sberbank/Supporting%20Files/Assets.xcassets/Screen.imageset)
 
 Конечный функционал:
 Окно «General» позволяет отслеживать участников группы, их траты, количество средств;
