@@ -23,7 +23,9 @@ final class LimitsCell: UITableViewCell{
         imgView.layer.masksToBounds = true
         imgView.contentMode = .scaleAspectFit
         
-        nameLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        nameLabel.font = .systemFont(ofSize: 24)
+        canSpendLabel.font = .systemFont(ofSize: 20)
+        alreadySpendLabel.font = .systemFont(ofSize: 20)
         
         horisontalStackView = UIStackView(arrangedSubviews: [canSpendLabel, alreadySpendLabel])
         horisontalStackView.axis = .horizontal

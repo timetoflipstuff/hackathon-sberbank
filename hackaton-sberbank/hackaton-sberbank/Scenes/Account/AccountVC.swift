@@ -90,7 +90,7 @@ extension AccountVC: UITableViewDataSource {
         let accMember = accMembers[indexPath.row]
         
         cell.nameLabel.text = accMember.name
-        cell.balanceLabel.text = String(accMember.finance) + " USD"
+        cell.balanceLabel.text = "$" + String(accMember.finance)
         cell.imgView.image = UIImage(named: accMember.image)
         
         cell.monExpLabel.text = "Monthly expenses: " + String(accMember.monthlyExpenditure)

@@ -7,9 +7,9 @@ final class LimitsBlockCell: UITableViewCell {
     
     private let tableView = UITableView()
     public var limitPosition = [LimitPosition(name: "Home", spent: 1000, image: "house", limit: 1000),
-                            LimitPosition(name: "Food", spent: 500, image: "food", limit: 547),
-                            LimitPosition(name: "Entertainments", spent: 700, image: "party", limit: 427),
-                            LimitPosition(name: "Other", spent: 1500, image: "different", limit: 2000)]
+                            LimitPosition(name: "Food", spent: 429, image: "food", limit: 550),
+                            LimitPosition(name: "Entertainments", spent: 754, image: "party", limit: 400),
+                            LimitPosition(name: "Other", spent: 1164, image: "different", limit: 2000)]
     
     
     private let mainLabel: UILabel = {

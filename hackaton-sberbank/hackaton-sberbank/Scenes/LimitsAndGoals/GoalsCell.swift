@@ -22,7 +22,8 @@ final class GoalsCell: UITableViewCell {
         imgView.layer.masksToBounds = true
         imgView.contentMode = .scaleAspectFit
         
-        nameLabel.font = UIFont.boldSystemFont(ofSize: 24)
+        nameLabel.font = .systemFont(ofSize: 24)
+        planAmmountLabel.font = .systemFont(ofSize: 20)
         
         vertStackView = UIStackView(arrangedSubviews: [nameLabel, planAmmountLabel])
         vertStackView.axis = .vertical
@@ -55,7 +56,7 @@ final class GoalsCell: UITableViewCell {
     public func setupUI(with item: Goal){
         imgView.image = UIImage(named: item.image)
         nameLabel.text = item.name
-        planAmmountLabel.text = "$" + String(item.planedAmmount)
+        planAmmountLabel.text = "$" + String(item.planedAmmount) + "/m"
         
 
         nameLabel.textColor = item.isPaid ? .pureGreen : .black
