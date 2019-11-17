@@ -1,5 +1,5 @@
 //
-//  Person.swift
+//  Message.swift
 //  hackaton-sberbank
 //
 //  Created by Alexander on 17.11.2019.
@@ -8,6 +8,7 @@
 
 import Foundation
 
-struct Person {
-    var profilePic: String
+struct Message {
+    var senderPictureName: String
+    var messageBody: String
 }
